@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Checkpoint Formulaire</title>
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+</head>
+<body>
+
+
+<h2 align="center">Vous benefissiez d'une remise de 4dt </h2>
+<br>
+
+<form action="recap.php" class="form-control" method="post" enctype = "multipart/form-data">
+
+    <input type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" placeholder="Nom" name="nom"><br><br>
+    <input type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" placeholder="Prenom" name="prenom"><br><br>
+    <input type="number" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" placeholder="Numbre de sandwitch" name="nbrSand"><br><br>
+    <textarea placeholder="address" name="addresse"></textarea><br><br>
+
+    <select class="custom-select" id="inputGroupSelect01" name="viandeType"><br>
+        <option value="viande">viande</option>
+        <option value="poulet">poulet</option>
+        <option value="escalope">escalope</option>
+    </select><br><br>
+    <input type="checkbox" name="ingredient[]" value="Harissa">Harissa<br>
+    <input type="checkbox" name="ingredient[]" value="Salade">Salade<br>
+    <input type="checkbox" name="ingredient[]" value="Mayonnaise">Mayonnaise<br>
+
+
+    <input type="file" name="card" value="idCard">Uploard Votre CIN<br><br>
+
+
+    <button class="btn btn-primary">Commander</button>
+</form>
+</body>
+</html>
